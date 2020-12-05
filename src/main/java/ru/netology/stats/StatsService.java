@@ -1,6 +1,7 @@
 package ru.netology.stats;
 
 public class StatsService {
+
     public long calculateSum(long[] purchases) {
         long sum = 0;
         for (long purchase : purchases) {
@@ -10,11 +11,9 @@ public class StatsService {
     }
 
     public long calculateAverageSum(long[] purchases){
-        long sum = 0;
-        for (long purchase : purchases) {
-            sum += purchase;
-        }
-        return sum/12;
+        StatsService averageSum = new StatsService();
+        averageSum.calculateSum(purchases);
+        return averageSum.calculateSum(purchases) / 12;
     }
 
     public long numberOfMonthWithMaxPurchases(long[] purchases) {
@@ -35,7 +34,7 @@ public class StatsService {
         long indexForMax = 0;
         for (int i = 0; i < purchases.length; i++) {
             long purchase = purchases[i];
-            if (min > purchase) {
+            if (min >= purchase) {
                 min = purchase;
                 indexForMax = i;
             }
@@ -44,14 +43,12 @@ public class StatsService {
     }
 
     public long numberOfMonthsUnderAverageSum(long[] purchases) {
-        long sum = 0;
+        StatsService averageSum = new StatsService();
+        averageSum.calculateSum(purchases);
+        long localAverageSum = averageSum.calculateSum(purchases) / 12;
         long months = 0;
         for (long purchase : purchases) {
-            sum += purchase;
-        }
-        long averageSum = sum/12;
-        for (long purchase : purchases) {
-            if (purchase < averageSum) {
+            if (purchase < localAverageSum) {
                 months++;
             }
         }
@@ -59,20 +56,17 @@ public class StatsService {
     }
 
     public long numberOfMonthsOverAverageSum(long[] purchases) {
-        long sum = 0;
+        StatsService averageSum = new StatsService();
+        averageSum.calculateSum(purchases);
+        long localAverageSum = averageSum.calculateSum(purchases) / 12;
         long months = 0;
-        for (long purchase : purchases) {
-            sum += purchase;
-        }
-        long averageSum = sum / 12;
         for (long purchase : purchases)
         {
-            if (purchase > averageSum)
+            if (purchase > localAverageSum)
             {
                 months++;
             }
         }
-
         return months;
     }
 }
