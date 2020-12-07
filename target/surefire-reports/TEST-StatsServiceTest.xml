@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="StatsServiceTest" time="0.266" tests="8" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="StatsServiceTest" time="0.504" tests="8" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="C:\Program Files\AdoptOpenJDK\jdk-11.0.9.11-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\803510\AppData\Local\Temp\surefire6560725233052163561\surefirebooter15767816298282085076.jar C:\Users\803510\AppData\Local\Temp\surefire6560725233052163561 2020-12-05T11-43-11_627-jvmRun1 surefire13442780902141809873tmp surefire_015800144626877660000tmp"/>
+    <property name="sun.java.command" value="C:\Users\803510\AppData\Local\Temp\surefire14985937943558453582\surefirebooter15669231693273459088.jar C:\Users\803510\AppData\Local\Temp\surefire14985937943558453582 2020-12-07T20-26-13_138-jvmRun1 surefire14552682484524634988tmp surefire_011246410621083085388tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\JAVA\StatsServise\target\test-classes;D:\JAVA\StatsServise\target\classes;C:\Users\803510\.m2\repository\org\junit\jupiter\junit-jupiter\5.7.0\junit-jupiter-5.7.0.jar;C:\Users\803510\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;C:\Users\803510\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\803510\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\803510\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\803510\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.0\junit-jupiter-params-5.7.0.jar;C:\Users\803510\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar;C:\Users\803510\.m2\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\803510\AppData\Local\Temp\surefire6560725233052163561\surefirebooter15767816298282085076.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\803510\AppData\Local\Temp\surefire14985937943558453582\surefirebooter15669231693273459088.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.9+11"/>
@@ -61,12 +61,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="shouldCalculateNumberOfMonthWithMaxPurchases" classname="StatsServiceTest" time="0.079"/>
+  <testcase name="shouldCalculateNumberOfMonthWithMaxPurchases" classname="StatsServiceTest" time="0.296"/>
   <testcase name="shouldCalculateNumberOfMonthsOverAverageSum" classname="StatsServiceTest" time="0"/>
-  <testcase name="shouldCalculateSum" classname="StatsServiceTest" time="0.016"/>
   <testcase name="shouldCalculateSum" classname="StatsServiceTest" time="0"/>
-  <testcase name="shouldCalculateSum" classname="StatsServiceTest" time="0"/>
+  <testcase name="shouldCalculateSum" classname="StatsServiceTest" time="0.008"/>
+  <testcase name="shouldCalculateSum" classname="StatsServiceTest" time="0.008"/>
   <testcase name="shouldCalculateNumberOfMonthWithMinPurchases" classname="StatsServiceTest" time="0"/>
-  <testcase name="shouldCalculateNumberOfMonthsUnderAverageSum" classname="StatsServiceTest" time="0.015"/>
+  <testcase name="shouldCalculateNumberOfMonthsUnderAverageSum" classname="StatsServiceTest" time="0.008"/>
   <testcase name="shouldCalculateAverageSum" classname="StatsServiceTest" time="0"/>
 </testsuite>

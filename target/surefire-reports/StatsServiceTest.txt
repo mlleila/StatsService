@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: StatsServiceTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.266 s - in StatsServiceTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.504 s - in StatsServiceTest

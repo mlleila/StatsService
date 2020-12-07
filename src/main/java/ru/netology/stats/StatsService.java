@@ -11,9 +11,7 @@ public class StatsService {
     }
 
     public long calculateAverageSum(long[] purchases){
-        StatsService averageSum = new StatsService();
-        averageSum.calculateSum(purchases);
-        return averageSum.calculateSum(purchases) / 12;
+        return calculateSum(purchases) / 12;
     }
 
     public long numberOfMonthWithMaxPurchases(long[] purchases) {
@@ -43,12 +41,9 @@ public class StatsService {
     }
 
     public long numberOfMonthsUnderAverageSum(long[] purchases) {
-        StatsService averageSum = new StatsService();
-        averageSum.calculateSum(purchases);
-        long localAverageSum = averageSum.calculateSum(purchases) / 12;
         long months = 0;
         for (long purchase : purchases) {
-            if (purchase < localAverageSum) {
+            if (purchase < calculateAverageSum(purchases)) {
                 months++;
             }
         }
@@ -56,13 +51,10 @@ public class StatsService {
     }
 
     public long numberOfMonthsOverAverageSum(long[] purchases) {
-        StatsService averageSum = new StatsService();
-        averageSum.calculateSum(purchases);
-        long localAverageSum = averageSum.calculateSum(purchases) / 12;
         long months = 0;
         for (long purchase : purchases)
         {
-            if (purchase > localAverageSum)
+            if (purchase > calculateAverageSum(purchases))
             {
                 months++;
             }
